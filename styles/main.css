@@ -4,10 +4,9 @@ body, html
 	height: 100%;
 	padding: 0;
 	margin: 0;
-	font-family: arial;
-	font-size: 16px;
-	background: #fff;
-	color: #eee;
+	font: 13px/18px Tahoma,sans-serif,Arial,Helvetica;
+	background: rgb(231, 235, 240) none repeat scroll 0% 0%;;
+	color: #000;
 }
 
 .wrapper
@@ -15,5 +14,28 @@ body, html
 	width: 100%;
 	height: 100%;
 }
+
+
+.section
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	background: rgb(231, 235, 240);
+}
+
+.section_hidden
+{
+	left: -99999999px;
+}
+
+.section_active
+{
+	left: 0;
+	z-index: 1000;
+}
+
 
 
