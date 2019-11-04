@@ -6,5 +6,14 @@ body, html
 	margin: 0;
 	font-family: arial;
 	font-size: 16px;
+	background: #fff;
+	color: #eee;
 }
+
+.wrapper
+{
+	width: 100%;
+	height: 100%;
+}
+
 
