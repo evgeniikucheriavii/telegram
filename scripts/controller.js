@@ -12,10 +12,23 @@ class Controller
 	Init()
 	{
 		
-
+		this.InitInputs();
 		this.InitCheckboxes();
 
 		//this.view.login.keepCheckbox.addEventListener("click", function (e) { obj.CheckboxClick(e.target); });
+	}
+
+	InitInputs()
+	{
+		var obj = this;
+
+		let inputs = document.getElementsByClassName("input-block__text");
+
+		for(var i = 0; i < inputs.length; i++)
+		{
+			inputs[i].addEventListener("focus", function (e) { obj.InputFocus(e.target); });
+			inputs[i].addEventListener("blur", function (e) { obj.InputBlur(e.target); });
+		}
 	}
 
 	InitCheckboxes()
@@ -35,7 +48,6 @@ class Controller
 	{
 		if(element.className.startsWith("checkbox__input"))
 		{
-			console.log(element);
 			if(element.checked)
 			{
 				element.parentNode.className = "checkbox__dot checkbox__dot_active";
@@ -47,5 +59,15 @@ class Controller
 				element.nextSibling.className = "checkbox__dot-img";
 			}
 		}
+	}
+
+	InputFocus(element)
+	{
+		element.parentNode.parentNode.className = "input-block input-block_focus";
+	}
+
+	InputBlur(element)
+	{
+		element.parentNode.parentNode.className = "input-block";
 	}
 }
