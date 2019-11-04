@@ -11,24 +11,37 @@ class Controller
 
 	Init()
 	{
+		
+
+		this.InitCheckboxes();
+
+		//this.view.login.keepCheckbox.addEventListener("click", function (e) { obj.CheckboxClick(e.target); });
+	}
+
+	InitCheckboxes()
+	{
 		var obj = this;
 
-		this.view.login.keepCheckbox.addEventListener("click", function (e) { obj.CheckboxClick(e.target); });
+		let checkboxes = document.getElementsByClassName("checkbox__input");
+
+		for(var i = 0; i < checkboxes.length; i++)
+		{
+			obj.CheckboxClick(checkboxes[i]);
+			checkboxes[i].addEventListener("change", function (e) { obj.CheckboxClick(e.target); });
+		}
 	}
 
 	CheckboxClick(element)
 	{
-		if(element.className.startsWith("checkbox__dot"))
+		if(element.className.startsWith("checkbox__input"))
 		{
-			if(element.className == "checkbox__dot checkbox__dot_active")
+			if(element.checked)
 			{
-				element.className = "checkbox__dot";
-				element.children[0].setAttribute("checked", "false");
+				element.parentNode.className = "checkbox__dot checkbox__dot_active";
 			}
-			else if(element.className == "checkbox__dot")
+			else
 			{
-				element.className = "checkbox__dot checkbox__dot_active";
-				element.children[0].setAttribute("checked", "true");
+				element.parentNode.className = "checkbox__dot";
 			}
 		}
 	}

@@ -131,7 +131,5 @@ body, html
 
 .checkbox__input
 {
-	display: none;
-	position: absolute;
-	left: -999999999px;
+	
 }
