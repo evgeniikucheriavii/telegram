@@ -8,23 +8,41 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="HandheldFriendly" content="true"/>
-		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="styles/app.css">
 	</head>
 	<body>
 		<div class="wrapper">
 			<section class="section section_active" id="login__section">
-				<div class="table">
-					<div class="table__cell">
-						<div class="table__content">
-							Aaaa
+				
+				<section class="section section_active" id="login_1__section">
+					<div class="table">
+						<div class="table__cell">
+							<div class="table__content table__content_center">
+							<img src="images/logo_share.png" class="tg__logo">
+							<p class="p p_center p_header">Sign in to Telegram</p>
+							<p class="p p_center p_gray">Please confirm your country and <br>enter your phone number</p>
+							<select>
+								<option>asd</option>
+								<option>asd</option>
+								<option>asd</option>
+							</select><br>
+							<input type="text" name="number" class="input input_login" ><br>
+							<label>
+								<div class="checkbox"><div class="checkbox__dot"><input type="checkbox" name="keep" class="checkbox__input"></div></div>
+								Keep me signed in</label>
+							</div>
 						</div>
 					</div>
-				</div>
+				</section>
+				
 			</section>
 			<section class="section section_hidden" id="app__section">
 				main app
 			</section>
 		</div>
-		<script type="text/javascript" src="scripts/main.js"></script>
+		<script type="text/javascript" src="scripts/model.js"></script>
+		<script type="text/javascript" src="scripts/view.js"></script>
+		<script type="text/javascript" src="scripts/controller.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
 	</body>
 </html>

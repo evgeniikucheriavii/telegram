@@ -1,0 +1,132 @@
+body, html
+{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font: 13px/18px Tahoma,sans-serif,Arial,Helvetica;
+	background: rgb(231, 235, 240) none repeat scroll 0% 0%;;
+	color: #000;
+}
+
+.wrapper
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+.section
+{
+	width: 100%;
+	height: 100%;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+}
+
+.section_hidden
+{
+	left: -99999999px;
+}
+
+.section_active
+{
+	left: 0;
+	z-index: 1000;
+}
+
+
+.table
+{
+	display: table;
+	width: 100%;
+	height: 100%;
+
+}
+
+.table__cell
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.table__content
+{
+	padding: 5px;
+}
+
+.table__content_center
+{
+	width: 300px;
+	margin: 0 auto;
+}
+
+
+#login__section
+{
+	background: #fff;
+	color: #000;
+}
+
+.tg__logo
+{
+	display: block;
+	margin: 15px auto;
+	width: 150px;
+}
+
+.p
+{
+	padding: 5px;
+}
+
+.p_header
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+}
+
+.p_center
+{
+	text-align: center;
+}
+
+.p_gray
+{
+	color: #777;
+}
+
+
+.checkbox
+{
+	border: 1px solid #cdc7c2;
+	border-radius: 15%;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+	background: #fcfbfb;
+}
+
+.checkbox__dot
+{
+	
+}
+
+.checkbox__dot_active
+{
+	background: url(images/icons/1check_1x.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.checkbox__input
+{
+	display: none;
+}
