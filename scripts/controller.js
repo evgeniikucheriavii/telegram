@@ -35,13 +35,16 @@ class Controller
 	{
 		if(element.className.startsWith("checkbox__input"))
 		{
+			console.log(element);
 			if(element.checked)
 			{
 				element.parentNode.className = "checkbox__dot checkbox__dot_active";
+				element.nextSibling.className = "checkbox__dot-img checkbox__dot-img_active";
 			}
 			else
 			{
 				element.parentNode.className = "checkbox__dot";
+				element.nextSibling.className = "checkbox__dot-img";
 			}
 		}
 	}

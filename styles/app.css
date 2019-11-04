@@ -110,6 +110,7 @@ body, html
 	vertical-align: middle;
 	margin: 5px;
 	background: #fcfbfb;
+	overflow: hidden;
 }
 
 .checkbox__dot
@@ -117,19 +118,28 @@ body, html
 	width: 100%;
 	height: 100%;
 	border-radius: inherit;
+	display: table;
+	vertical-align: middle;
 }
 
 .checkbox__dot_active
 {
-	background: url(../images/icons/1check_1x.png) no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	background-color: #33aadf;
+}
+
+.checkbox__dot-img
+{
+	display: table-cell;
+	opacity: 0.0;
+}
+
+.checkbox__dot-img_active
+{
+	width: 100%;
+	opacity: 1.0;
 }
 
 .checkbox__input
 {
-	
+	display: none;
 }
