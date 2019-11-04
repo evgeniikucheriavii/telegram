@@ -114,19 +114,24 @@ body, html
 
 .checkbox__dot
 {
-	
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
 }
 
 .checkbox__dot_active
 {
-	background: url(images/icons/1check_1x.png) no-repeat center center fixed; 
+	background: url(../images/icons/1check_1x.png) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	background-color: #33aadf;
 }
 
 .checkbox__input
 {
 	display: none;
+	position: absolute;
+	left: -999999999px;
 }
