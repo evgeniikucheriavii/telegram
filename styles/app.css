@@ -83,7 +83,7 @@ body, html
 {
 	display: block;
 	margin: 5px auto;
-	width: 95%;
+	width: 290px;
 	border: 1px solid #cdc7c2;
 	border-radius: 5px;
 	background: #fff;
@@ -107,6 +107,74 @@ body, html
 	border: 0;
 	background: inherit;
 
+}
+
+.input-block__value
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: 90%;
+}
+
+.input-block__arrow
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: 8%;
+}
+
+.input-block__value_placeholder
+{
+	color: #8f7787;
+	cursor: default;
+}
+
+.input-block__options
+{
+	position: absolute;
+	background: #fff;
+	width: 290px;
+	margin-top: 5px;
+	margin-left: -16px;
+	height: 130px;
+	overflow: auto;
+	border: 1px solid #cdc7c2;
+	border-top: 0;
+	border-radius: 0 0 5px 5px;
+}
+
+.input-block__options_hidden
+{
+	left: -99999999px;
+}
+
+.input-block__option
+{
+	display: block;
+	border-bottom: 1px solid #cdc7c2;
+	padding: 5px;
+}
+
+.input-block__option:last-of-type
+{
+	border: 0;
+}
+
+.input-block__option:hover, .input-block__option_active
+{
+	background: #f4f4f4;
+}
+
+.input-block__option-radio
+{
+	display: none;
+}
+
+.input-block__option-img
+{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
 }
 
 /* ----- P ----- */

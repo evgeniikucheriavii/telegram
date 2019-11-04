@@ -21,19 +21,38 @@
 							<img src="images/logo_share.png" class="tg__logo">
 							<p class="p p_center p_header">Sign in to Telegram</p>
 							<p class="p p_center p_gray">Please confirm your country and <br>enter your phone number</p>
-							<select>
-								<option>asd</option>
-								<option>asd</option>
-								<option>asd</option>
-							</select><br>
-							<div class="input-block">
+							<div class="input-block input-block_select">
+								<div class="input-block__content">
+									<div class="input-block__value input-block__value_placeholder">Country</div>
+									<img src="images/icons/down_g_svg.svg" class="input-block__arrow">
+									<div class="input-block__options input-block__options_hidden">
+										<label class="input-block__option">
+											<input type="radio" name="county" value="a" class="input-block__option-radio">
+											<img src="images/flags/a.png" class="input-block__option-img">
+											A
+										</label>
+										<label class="input-block__option">
+											<input type="radio" name="county" value="b" class="input-block__option-radio">
+											<img src="images/flags/b.png" class="input-block__option-img">
+											B
+										</label>
+										<label class="input-block__option">
+											<input type="radio" name="county" value="c" class="input-block__option-radio">
+											<img src="images/flags/c.png" class="input-block__option-img">
+											C
+										</label>
+									</div>
+								</div>
+							</div>
+							<label class="input-block">
 								<div class="input-block__content">
 									<input type="text" name="phone" class="input-block__text" placeholder="Phone Number">
 								</div>
-							</div>
+							</label>
 							<label>
 								<div class="checkbox" id="keepCheckbox"><div class="checkbox__dot"><input type="checkbox" name="keep" class="checkbox__input"><img src="images/icons/1check_w_svg.svg" class="checkbox__dot-img"></div></div>
-								Keep me signed in</label>
+								Keep me signed in
+							</label>
 							</div>
 						</div>
 					</div>
